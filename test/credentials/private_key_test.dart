@@ -1,8 +1,8 @@
 import 'dart:convert';
 
+import 'package:dart_web3/credentials.dart';
+import 'package:dart_web3/crypto.dart';
 import 'package:test/test.dart';
-import 'package:web3_dart/credentials.dart';
-import 'package:web3_dart/crypto.dart';
 
 void main() {
   test('signs messages', () async {

@@ -3,11 +3,10 @@ library web3dart.internal.js.creds;
 
 import 'dart:typed_data';
 
+import 'package:dart_web3/dart_web3.dart';
 import 'package:js/js.dart';
-import 'package:web3_dart/web3_dart.dart';
 
 import '../../crypto.dart';
-
 import 'dart_wrappers.dart';
 import 'javascript.dart';
 

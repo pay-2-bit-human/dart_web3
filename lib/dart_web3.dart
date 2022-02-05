@@ -1,15 +1,15 @@
-library web3_dart;
+library dart_web3;
 
 import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:collection/collection.dart';
+import 'package:dart_web3/src/utils/length_tracking_byte_sink.dart';
 import 'package:http/http.dart';
 import 'package:json_rpc_2/json_rpc_2.dart' as rpc;
 import 'package:meta/meta.dart';
 import 'package:stream_channel/stream_channel.dart';
 import 'package:stream_transform/stream_transform.dart';
-import 'package:web3_dart/src/utils/length_tracking_byte_sink.dart';
 
 import 'contracts.dart';
 import 'credentials.dart';
@@ -24,7 +24,6 @@ import 'src/utils/typed_data.dart';
 
 export 'contracts.dart';
 export 'credentials.dart';
-
 export 'src/core/amount.dart';
 export 'src/core/block_information.dart';
 export 'src/core/block_number.dart';

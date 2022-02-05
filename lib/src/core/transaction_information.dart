@@ -1,4 +1,4 @@
-part of 'package:web3_dart/web3_dart.dart';
+part of 'package:dart_web3/dart_web3.dart';
 
 class TransactionInformation {
   TransactionInformation.fromMap(Map<String, dynamic> map)

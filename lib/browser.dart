@@ -1,4 +1,4 @@
-/// Support for using web3_dart with browser clients such as MetaMask.
+/// Support for using dart_web3 with browser clients such as MetaMask.
 ///
 /// ## Example
 ///
@@ -7,8 +7,8 @@
 /// import 'dart:html';
 /// import 'dart:typed_data';
 ///
-/// import 'package:web3_dart/browser.dart';
-/// import 'package:web3_dart/web3_dart.dart';
+/// import 'package:dart_web3/browser.dart';
+/// import 'package:dart_web3/dart_web3.dart';
 ///
 /// Future<void> main() async {
 ///   final eth = window.ethereum;
@@ -23,7 +23,7 @@
 ///   print('Using ${credentials.address}');
 ///   print('Client is listening: ${await client.isListeningForNetwork()}');
 ///
-///   final message = Uint8List.fromList(utf8.encode('Hello from web3_dart'));
+///   final message = Uint8List.fromList(utf8.encode('Hello from dart_web3'));
 ///   final signature = await credentials.signPersonalMessage(message);
 ///   print('Signature: ${base64.encode(signature)}');
 /// }

@@ -1,8 +1,8 @@
 import 'dart:convert';
 
+import 'package:dart_web3/crypto.dart';
+import 'package:dart_web3/src/utils/rlp.dart';
 import 'package:test/test.dart';
-import 'package:web3_dart/crypto.dart';
-import 'package:web3_dart/src/utils/rlp.dart';
 
 import 'rlp_test_vectors.dart' as data;
 

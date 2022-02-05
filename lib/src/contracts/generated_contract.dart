@@ -1,11 +1,11 @@
 import 'package:meta/meta.dart';
 
 import '../../crypto.dart';
-import '../../web3_dart.dart';
+import '../../dart_web3.dart';
 
 /// Base classes for generated contracts.
 ///
-/// web3_dart can generate contract classes from abi specifications. For more
+/// dart_web3 can generate contract classes from abi specifications. For more
 /// information, see its readme!
 abstract class GeneratedContract {
   final DeployedContract self;

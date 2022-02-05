@@ -1,5 +1,5 @@
 # This file configures the build in this package, but it does not affect
-# builds for packages depending on web3_dart.
+# builds for packages depending on dart_web3.
 
 builders:
   solc_builder:
@@ -17,7 +17,7 @@ builders:
   abi_generator:
     build_extensions: 
       ".abi.json": [".g.dart"]
-    import: "package:web3_dart/src/builder/builders.dart"
+    import: "package:dart_web3/src/builder/builders.dart"
     builder_factories: ["abiGenerator"]
     build_to: source
     auto_apply: root_package

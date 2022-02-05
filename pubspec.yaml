@@ -1,7 +1,7 @@
-name: web3_dart
+name: dart_web3
 description: Dart library to connect to Ethereum clients. Send transactions and interact with smart contracts!
 version: 0.0.1
-homepage: https://github.com/pay-2-bit-human/web3_dart
+homepage: https://github.com/pay-2-bit-human/dart_web3
 
 environment:
   sdk: ">=2.15.1 <3.0.0"

@@ -1,7 +1,8 @@
 import 'dart:convert';
 import 'dart:typed_data';
+
+import 'package:dart_web3/crypto.dart';
 import 'package:test/test.dart';
-import 'package:web3_dart/crypto.dart';
 
 const Map<String, String> _privateKeysToAddress = {
   'a2fd51b96dc55aeb14b30d55a6b3121c7b9c599500c1beb92a389c3377adc86e':

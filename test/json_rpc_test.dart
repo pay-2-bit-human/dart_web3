@@ -1,9 +1,9 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:dart_web3/json_rpc.dart';
 import 'package:http/http.dart';
 import 'package:test/test.dart';
-import 'package:web3_dart/json_rpc.dart';
 
 final uri = Uri.parse('url');
 

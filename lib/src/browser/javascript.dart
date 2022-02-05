@@ -16,7 +16,7 @@ external Ethereum? get _ethereum;
 extension GetEthereum on Window {
   /// Loads the ethereum instance provided by the browser.
   ///
-  /// For more information on how to use this object with the web3_dart package,
+  /// For more information on how to use this object with the dart_web3 package,
   /// see the methods on [DartEthereum].
   Ethereum? get ethereum => _ethereum;
 }

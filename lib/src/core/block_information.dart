@@ -1,5 +1,5 @@
-import 'package:web3_dart/src/crypto/formatting.dart';
-import 'package:web3_dart/web3_dart.dart';
+import 'package:dart_web3/dart_web3.dart';
+import 'package:dart_web3/src/crypto/formatting.dart';
 
 class BlockInformation {
   final EtherAmount? baseFeePerGas;

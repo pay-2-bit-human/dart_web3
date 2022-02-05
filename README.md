@@ -1,10 +1,10 @@
-# web3_dart
+# dart_web3
 A dart library that connects and interact with the Ethereum blockchain. It connects to an Ethereum node to send transactions, interact with smart contracts and much more!
 
 ## NOTE.
 This package was clone of **web3dart** version 2.3.3 originally created by [@simolus3](https://github.com/simolus3/web3dart).
 This is one of the popular packages for dapp development in flutter eco-system, but yesterday(04-02-2022) web3dart is discontinued by its [owner](https://github.com/simolus3) and marked as read-only.
-So I decided to release it as **web3_dart** for the community.
+So I decided to release it as **dart_web3** for the community.
 
 From the original [creator](https://github.com/simolus3) of web3dart:
 ```text
@@ -30,7 +30,7 @@ In order to send transactions on the Ethereum network, some credentials are requ
 ```dart
 import 'dart:math'; //used for the random number generator
 
-import 'package:web3_dart/web3_dart.dart';
+import 'package:dart_web3/dart_web3.dart';
 // You can create Credentials from private keys
 Credentials fromHex = EthPrivateKey.fromHex("c87509a[...]dc0d3");
 
@@ -48,7 +48,7 @@ Another way to obtain `Credentials` which the library uses to sign transactions 
 
 ```dart
 import 'dart:io';
-import 'package:web3_dart/web3_dart.dart';
+import 'package:dart_web3/dart_web3.dart';
 
 String content = File("wallet.json").readAsStringSync();
 Wallet wallet = Wallet.fromJson(content, "testpassword");
@@ -66,14 +66,14 @@ print(wallet.toJson());
 You can also write `wallet.toJson()` into a file which you can later open with [MyEtherWallet](https://www.myetherwallet.com/#view-wallet-info) (select Keystore / JSON File) or other Ethereum clients like geth.
 
 #### Custom credentials
-If you want to integrate `web3_dart` with other wallet providers, you can implement `Credentials` and override the appropriate methods.
+If you want to integrate `dart_web3` with other wallet providers, you can implement `Credentials` and override the appropriate methods.
 
 ### Connecting to an RPC server
 The library won't send signed transactions to miners itself. Instead,it relies on an RPC client to do that. You can use a public RPC API like [infura](https://infura.io/), setup your own using [geth](https://github.com/ethereum/go-ethereum/wiki/geth) or, if you just want to test things out, use a private testnet with [truffle](https://www.trufflesuite.com/) and [ganache](https://www.trufflesuite.com/ganache). All these options will give you an RPC endpoint to which the library can connect.
 
 ```dart
 import 'package:http/http.dart'; //You can also import the browser version
-import 'package:web3_dart/web3_dart.dart';
+import 'package:dart_web3/dart_web3.dart';
 
 var apiUrl = "http://localhost:7545"; //Replace with your API
 
@@ -91,7 +91,7 @@ print(balance.getValueInUnit(EtherUnit.ether));
 Of course, this library supports creating, signing and sending Ethereum transactions:
 
 ```dart
-import 'package:web3_dart/web3_dart.dart';
+import 'package:dart_web3/dart_web3.dart';
 
 /// [...], you need to specify the url and your client, see example above
 var ethClient = Web3Client(apiUrl, httpClient);
@@ -111,11 +111,11 @@ await client.sendTransaction(
 Missing data, like the gas price, the sender and a transaction nonce will be obtained from the connected node when not explicitly specified. If you only need the signed transaction but don't intend to send it, you can use `client.signTransaction`.
 
 ### Smart contracts
-The library can parse the abi of a smart contract and send data to it. It can also listen for events emitted by smart contracts. See [this file](https://github.com/pay-2-bit-human/web3_dart/blob/development/example/contracts.dart) for an example.
+The library can parse the abi of a smart contract and send data to it. It can also listen for events emitted by smart contracts. See [this file](https://github.com/pay-2-bit-human/dart_web3/blob/development/example/contracts.dart) for an example.
 
 ### Dart Code Generator
 
-By using [Dart's build system](https://github.com/dart-lang/build/), web3_dart can generate Dart code to easily access smart contracts.
+By using [Dart's build system](https://github.com/dart-lang/build/), dart_web3 can generate Dart code to easily access smart contracts.
 
 To use this feature, put a contract abi json somewhere into `lib/`.
 The filename has to end with `.abi.json`.
@@ -147,4 +147,4 @@ See [Customizing static analysis](https://dart.dev/guides/language/analysis-opti
 Please file feature requests and bugs at the [issue tracker][tracker].
 If you want to contribute to this library, please submit a Pull Request.
 
-[tracker]: https://github.com/pay-2-bit-human/web3_dart/issues/new
+[tracker]: https://github.com/pay-2-bit-human/dart_web3/issues/new

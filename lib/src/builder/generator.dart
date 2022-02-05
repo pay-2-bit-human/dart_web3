@@ -5,8 +5,8 @@ import 'package:build/build.dart';
 import 'package:built_collection/built_collection.dart';
 import 'package:code_builder/code_builder.dart';
 import 'package:dart_style/dart_style.dart';
+import 'package:dart_web3/contracts.dart';
 import 'package:path/path.dart';
-import 'package:web3_dart/contracts.dart';
 
 import '../../crypto.dart';
 import 'documentation.dart';
@@ -72,7 +72,7 @@ ${library.accept(emitter)}''';
       // The source couldn't be parsed. Emit it anyways to make debugging the
       // generator easier, but this is likely our fault.
       log.severe('Could not format generated source. This is likely a bug in '
-          'web3_dart');
+          'dart_web3');
       return source;
     }
   }

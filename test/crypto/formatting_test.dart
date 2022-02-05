@@ -1,5 +1,5 @@
+import 'package:dart_web3/crypto.dart';
 import 'package:test/test.dart';
-import 'package:web3_dart/crypto.dart';
 
 void main() {
   test('strip 0x prefix', () {

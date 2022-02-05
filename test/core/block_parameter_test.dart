@@ -1,5 +1,5 @@
+import 'package:dart_web3/dart_web3.dart';
 import 'package:test/test.dart';
-import 'package:web3_dart/web3_dart.dart';
 
 // https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter
 const blockParameters = {
