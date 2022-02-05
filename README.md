@@ -1,17 +1,6 @@
 # dart_web3
 A dart library that connects and interact with the Ethereum blockchain. It connects to an Ethereum node to send transactions, interact with smart contracts and much more!
 
-## NOTE.
-This package was clone of **web3dart** version 2.3.3 originally created by [@simolus3](https://github.com/simolus3/web3dart).
-This is one of the popular packages for dapp development in flutter eco-system, but yesterday(04-02-2022) web3dart is discontinued by its [owner](https://github.com/simolus3) and marked as read-only.
-So I decided to release it as **dart_web3** for the community.
-
-From the original [creator](https://github.com/simolus3) of web3dart:
-```text
-I no longer want to support, contribute to, or be associated with cryptocurrencies and web3. So, the package is marked as discontinued and the repository is archived.
-If anyone wants to continue maintaining this package, please get in touch.
-```
-
 ### Features
 - Connect to an Ethereum node with the rpc-api, call common methods
 - Send signed Ethereum transactions
@@ -141,6 +130,17 @@ analyzer:
 ```
 
 See [Customizing static analysis](https://dart.dev/guides/language/analysis-options) for advanced options.
+
+## NOTE.
+This package was clone of **web3dart** version 2.3.3 originally created by [@simolus3](https://github.com/simolus3/web3dart).
+This is one of the popular packages for dapp development in flutter eco-system, but yesterday(04-02-2022) web3dart is discontinued by its [owner](https://github.com/simolus3) and marked as read-only.
+So I decided to release it as **dart_web3** for the community.
+
+From the original [creator](https://github.com/simolus3) of web3dart:
+```text
+I no longer want to support, contribute to, or be associated with cryptocurrencies and web3. So, the package is marked as discontinued and the repository is archived.
+If anyone wants to continue maintaining this package, please get in touch.
+```
 
 ## Feature requests and bugs
 
