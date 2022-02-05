@@ -1,0 +1,8 @@
+tags:
+  expensive:
+    timeout: 2x
+
+override_platforms:
+  firefox:
+    settings:
+      arguments: -headless
